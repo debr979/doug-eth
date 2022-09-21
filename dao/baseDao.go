@@ -32,5 +32,5 @@ func (r *dbSetting) DBSetting(host, dbName, user, password string) {
 	r.USER = user
 	r.PASSWORD = password
 
-	log.Println(r)
+	log.Printf("%+v", *r)
 }

@@ -24,7 +24,9 @@ func init() {
 }
 
 func main() {
+
 	if err := routes.Routes.Server(); err != nil {
 		lg.Logging.ErrorLogging(err)
 	}
+
 }

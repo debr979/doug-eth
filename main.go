@@ -25,6 +25,8 @@ func init() {
 
 func main() {
 
+	go ether.Eth.SubscribingBlock()
+
 	if err := routes.Routes.Server(); err != nil {
 		lg.Logging.ErrorLogging(err)
 	}
